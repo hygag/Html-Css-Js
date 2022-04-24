@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+
+            width: 295px;
+            height: 500px;
+            background-color: #FFFFFF;
+        }
+
+        .head {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 70px;
+            background-color: #FFFFFF;
+        }
+
+        /* 30 110 20  */
+        .h1 {
+            flex: 2;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        img {
+            height: 14px;
+        }
+
+        button {
+            background-color: #FFFFFF;
+            border: #fff 0px;
+        }
+
+        .h1_style {
+
+
+            color: rgb(40, 187, 241);
+        }
+
+        .h1_box1 {
+            margin-left: 15px;
+            margin-right: 30px;
+            width: 15px;
+        }
+
+        .h1_box2 {
+            font-size: 16px;
+            margin-right: 10px;
+            width: 60px;
+        }
+
+        .h1_box3 {
+            width: 90px;
+        }
+
+        .h1_box4 {
+            width: 15px;
+            margin-right: 20px;
+        }
+
+        .h1_box5 {
+            width: 20px;
+            margin-right: 15px;
+        }
+
+        .h2 {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(167, 163, 164);
+        }
+
+        .h2_style {
+            margin-left: 15px;
+            margin-right: 15px;
+            font-size: 10px;
+            color: #FFFFFF;
+        }
+
+        .content {
+            margin-top: 15px;
+            display: flex;
+            width: 100%;
+            height: 400px;
+            overflow: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .content_left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+        .content_right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            margin-right: 15px;
+        }
+
+        .content_box {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+        }
+
+        .content_img {
+            width: 100%;
+            height: auto;
+        }
+
+        .content_word {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 35px;
+
+
+        }
+
+        .word_p {
+            flex: 1;
+            margin-left: 5px;
+        }
+
+        .word_box {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .wl {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 5px;
+        }
+
+        .wl_img {
+            height: 5px;
+            width: 5px;
+        }
+
+        .wr {
+            color: rgb(99, 26, 236);
+        }
+
+        .space {
+            height: 15px;
+            width: 100%;
+        }
+
+        .content::-webkit-scrollbar {
+            width: 0;
+        }
+
+
+        .foot {
+            display: flex;
+            height: 45px;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .foot_style {
+            width: 18px;
+            height: 18px;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    </style>
+
+</head>
+
+<body style="background-color: black;">
+    <script>
+        function a() {
+            alert("下拉菜單還沒做，太菜了太菜了")
+        }
+        function b() {
+            alert("不要看，啥也沒有");
+        }
+        function c() {
+            alert("說了不要亂點");
+        }
+    </script>
+
+    <div class="main">
+        <span class="head">
+            <span class="h1">
+                <span class="h1_style"><button onclick="a()" class="h1_box1"><img src="img/1.png"></img></button></span>
+                <span class="h1_style h1_box2">ModMix</span>
+                <span class="h1_style h1_box3"></span>
+                <span class="h1_style"><button onclick="b()" class="h1_box4"><img src="img/4.png"></img></button></span>
+                <span class="h1_style"><button onclick="c()" class="h1_box5"><img src="img/5.png"></img></button></span>
+            </span>
+            <span class="h2">
+                <span class="h2_style">NEW ARRIVAL</span>
+                <span class="h2_style">324 products</span>
+            </span>
+        </span>
+        <span class="content">
+            <span class="content_left">
+                <span class="content_box">
+                    <img src="img/11.jpg" class="content_img"></img>
+                    <span class="content_word">
+                        <span class="wrod_p">
+                            <p style="font-size: 9px;padding: 5px;">Chiffon Party Dress</p>
+                        </span>
+                        <span class="word_box">
+                            <span class="wl">
+                                <img src="img/c3.png" class="wl_img"></img>
+                                <img src="img/c2.png" class="wl_img"></img>
+                                <img src="img/c1.png" class="wl_img"></img>
+                            </span>
+                            <span class="wr" style="font-size: 9px;">$212</span>
+                        </span>
+                    </span>
+                    <span class="space"></span>
+                </span>
+
+                <span class="content_box">
+                    <img src="img/44.jpg" class="content_img"></img>
+                    <span class="content_word">
+                        <span class="wrod_p">
+                            <p style="font-size: 9px;padding: 5px;">Chiffon Party Dress</p>
+                        </span>
+                        <span class="word_box">
+                            <span class="wl">
+                                <img src="img/c1.png" class="wl_img"></img>
+                                <img src="img/c4.png" class="wl_img"></img>
+                                <img src="img/c3.png" class="wl_img"></img>
+                            </span>
+                            <span class="wr" style="font-size: 9px;">$212</span>
+                        </span>
+                    </span>
+                    <span class="space"></span>
+                </span>
+                <span class="content_box">
+                    <img src="img/55.jpg" class="content_img"></img>
+                    <span class="content_word">
+                        <span class="wrod_p">
+                            <p style="font-size: 9px;padding: 5px;">Chiffon Party Dress</p>
+                        </span>
+                        <span class="word_box">
+                            <span class="wl">
+                                <img src="img/c1.png" class="wl_img"></img>
+                                <img src="img/c3.png" class="wl_img"></img>
+                                <img src="img/c2.png" class="wl_img"></img>
+                            </span>
+                            <span class="wr" style="font-size: 9px;">$212</span>
+                        </span>
+                    </span>
+                    <span class="space"></span>
+                </span>
+            </span>
+            <span class="content_right">
+                <span class="content_box">
+                    <img src="img/55.jpg" class="content_img"></img>
+                    <span class="content_word">
+                        <span class="wrod_p">
+                            <p style="font-size: 9px;padding: 5px;">Chiffon Party Dress</p>
+                        </span>
+                        <span class="word_box">
+                            <span class="wl">
+                                <img src="img/c4.png" class="wl_img"></img>
+                                <img src="img/c3.png" class="wl_img"></img>
+                            </span>
+                            <span class="wr" style="font-size: 9px;">$212</span>
+                        </span>
+                    </span>
+                    <span class="space"></span>
+                </span>
+                <span class="content_box">
+                    <img src="img/33.jpg" class="content_img"></img>
+                    <span class="content_word">
+                        <span class="wrod_p">
+                            <p style="font-size: 9px;padding: 5px;">Chiffon Party Dress</p>
+                        </span>
+                        <span class="word_box">
+                            <span class="wl">
+                                <img src="img/c1.png" class="wl_img"></img>
+                                <img src="img/c4.png" class="wl_img"></img>
+                                <img src="img/c3.png" class="wl_img"></img>
+                            </span>
+                            <span class="wr" style="font-size: 9px;">$212</span>
+                        </span>
+                    </span>
+                    <span class="space"></span>
+                </span>
+                <span class="content_box">
+                    <img src="img/22.jpg" class="content_img"></img>
+                    <span class="content_word">
+                        <span class="wrod_p">
+                            <p style="font-size: 9px;padding: 5px;">Chiffon Party Dress</p>
+                        </span>
+                        <span class="word_box">
+                            <span class="wl">
+                                <img src="img/c1.png" class="wl_img"></img>
+                                <img src="img/c2.png" class="wl_img"></img>
+                                <img src="img/c3.png" class="wl_img"></img>
+                            </span>
+                            <span class="wr" style="font-size: 9px;">$212</span>
+                        </span>
+                    </span>
+                    <span class="space"></span>
+                </span>
+            </span>
+        </span>
+        <span class="foot">
+            <span><button class="foot_style"><img src="img/all.png"></img></button></span>
+            <span><button class="foot_style"><img src="img/time.png"></img></button></span>
+            <span><button class="foot_style"><img src="img/like.png"></img></button></span>
+            <span><button class="foot_style"><img src="img/md-refresh.png"></img></button></span>
+            <span><button class="foot_style"><img src="img/gag.png"></img></button></span>
+        </span>
+    </div>
+</body>
+
+</html>
