@@ -1,4 +1,4 @@
-var a = [
+var region = [
     { "item_code": "110000", "item_name": "北京市" },
     { "item_code": "120000", "item_name": "天津市" },
     { "item_code": "130000", "item_name": "河北省" },
