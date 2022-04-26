@@ -3,6 +3,9 @@
 
 <head>
     <title>Document</title>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <link tpye = "text/css" rel="styleSheet" href="index.css"/>
     <script src="region.js"></script>
     <script src="set.js"></script>
@@ -10,17 +13,21 @@
 
 <body>
     <div >
-        <form class= "box1">
-            <select name="省" id="province">
-                <option value="请选择你的省份" onchange="getCity(this)">==请选择你的省份==</option>
-            </select>
-            <select name="市" id="city">
-                <option value="请选择你的城市" onchange="getTown(this)">==请选择你的城市==</option>
-            </select>
-            <select name="县" id="town">
-                <option value="请选择你的县镇" onchange="getTown(this)"> ==请选择你的县镇== </option>
-            </select>
-        </form>
+        <div class="box1">
+            
+                <select name="省" id="province">
+                    <option value="请选择你的省份" onchange="getCity(this)">==请选择你的省份==</option>
+                </select>
+                
+                <select name="市" id="city">
+                    <option value="请选择你的城市" onchange="getTown(this)">==请选择你的城市==</option>
+                </select>
+                <select name="县" id="town">
+                    <option value="请选择你的县镇" onchange="getTown(this)"> ==请选择你的县镇== </option>
+                </select>
+            
+        </div>
+       
     </div>
     
     
