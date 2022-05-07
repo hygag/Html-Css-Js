@@ -1,12 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="styleSheet" type="text/css">
     <title>Document</title>
 </head>
-<body style="width: 800px; height: 800px; align-items: center;">
-    
+
+<body>
+    <div class="main">
+        <!-- 主干 --里面再包一层 -->
+        <div class="main_content">
+            <div class="main_content_box">
+                <!-- 左边 用li来实现 -->
+                <span class="left">
+                    <span class="span_li">
+                        <img src="task_image1/创可贴.png" alt="" width="90px" height="90px" style="margin-bottom: 22px;">
+                        <li><img src="task_image1/人员图标.png">
+                            <p>Patients</p>
+                        </li>
+                        <li style="background-color: rgb(89, 202, 232); border-radius: 13px; background-size: auto;">
+                            <img src="task_image1/数据(白色).png">
+                            <p>Overview</p>
+                        </li>
+                        <li><img src="task_image1/今日任务.png">
+                            <p>History</p>
+                        </li>
+                        <li><img src="task_image1/时钟 实心.png">
+                            <p>Appointment</p>
+                        </li>
+                        <li><img src="task_image1/齿轮.png">
+                            <p>Setting</p>
+                        </li>
+                    </span>
+
+
+                    <img src="task_image1/电话.png" alt="" width="80px" height="80px">
+
+                </span>
+
+                <!-- 中间最为复杂，等下构思 -->
+                <!-- 五个区块 -->
+                <span class="center">
+                    <!-- 区块一 : 包含俩个子区块-->
+                    <span class="center_box1">
+                        <span class="box1_1">
+                            <p>Search something...</p>
+                            <img src="task_image1/查找.png">
+                        </span>
+                        <span class="box1_2">
+                            <ul>
+                                <li><b> Add patient</b></li>
+                            </ul>
+                        </span>
+                    </span>
+
+                    <!-- 区块二 ： 三个子区块 -->
+                    <span class="center_box2">
+                        <span class="box2_1">
+                            <h3>Hi,Jennifer</h3> <br>
+                            <p>You're been doing where work plan for the last two mouths Way to go
+                                <img src="task_image1/点赞.png" width="15px" height="15px">
+                            </p>
+                            <!-- <img src="task_image1/药.png" alt="">     -->
+                        </span>
+                        <span class="box2_2" style="color: rgb(253, 134, 126);">
+                            <h2>+11</h2>
+                            <p>reviews</p>
+                            <img src="task_image1/3.png" alt="" width="100%" height="auto" style="margin-bottom: 10px;">
+                        </span>
+                        <span class="box2_2" style="color: rgb(125, 217, 231);">
+                            <h2>+78</h2>
+                            <p>patients</p>
+                            <img src="task_image1/4.png" alt="" width="100%" height="auto" style="margin-bottom: 10px;">
+                        </span>
+
+                    </span>
+
+                    <!-- 区块三 ： Patient analytics -->
+                    <span class="center_box3">
+                        <p style="font-weight:bolder;">Patient analytics</p>
+                    </span>
+
+                    <!-- 区块四 ： 三个等宽区块 -->
+                    <span class="center_box4">
+                        <span class="Box4" style="background-color:rgb(251,136, 133);">
+                            <img src="task_image1/心率.png" alt="">
+                            <p>
+                                <b style="font-size: 13px;">Appointment today</b>
+                                <br> 15 patients
+                            </p>
+                        </span>
+                        <span class="Box4" style="background-color:rgb(255,181,  92);">
+                            <img src="task_image1/人员.png" alt="">
+                            <p>
+                                <b style="font-size: 13px;">New patients </b>
+                                <br> 125 for the mouths
+                            </p>
+                        </span>
+                        <span class="Box4" style="background-color:rgb(105,201, 215);">
+                            <img src="task_image1/任务清单.png" alt="">
+                            <p>
+                                <b style="font-size: 13px;">total patient</b>
+                                <br> 2000+
+                            </p>
+                        </span>
+                    </span>
+
+                    <!-- 区块五 ： 俩个表 -->
+                    <span class="center_box5">
+                        <span class="box5_1">
+                            <span class="box5_1_top">
+                                <p><strong>This week's analytics overview</strong></p>
+                                <img src="task_image1/条形图.png" alt="" width="30px" height="30px"
+                                    style="margin-left:42px ;">
+                                <img src="task_image1/线条.png" alt="" width="20px" height="20px">
+                            </span>
+
+                            <span class="box5_1_center">
+                                <span>
+                                    <li>25</li>
+                                    <li>20</li>
+                                    <li>15</li>
+                                    <li>10</li>
+                                    <li> 5</li>
+                                    <li> 0</li>
+                                </span>
+                                <img src="task_image1/2.png" alt="">
+                            </span>
+
+                            <span class="box5_1_bottom">
+                                <li>Mon</li>
+                                <li>Tue</li>
+                                <li>Wed</li>
+                                <li>Thu</li>
+                                <li>Fri</li>
+                                <li>Sat</li>
+                                <li>Sun</li>
+                            </span>
+                        </span>
+                        <span class="box5_2">
+                            <span class="box5_2_top">
+                                <p>Progress</p>
+                                <img src="task_image1/刷新.png" alt="" width="35px" height="35px">
+                            </span>
+                            <span class="box5_2_center">
+                                <img src="task_image1/1.png" alt="" width="auto" height="90%">
+                            </span>
+                            <span class="box5_2_bottom">
+                                <span>
+                                    <figure class="circle" style="background-color:rgb(89, 202, 232);"></figure>
+                                    <p>Health</p>
+                                </span>
+                                <span>
+                                    <figure class="circle" style="background:rgb(226, 50, 50);"></figure>
+                                    <p>Continue treatment</p>
+                                </span>
+                                <span>
+                                    <figure class="circle" style="background-color: rgb(143, 145, 26);"></figure>
+                                    <p>Neutral</p>
+                                </span>
+                            </span>
+                        </span>
+                    </span>
+                </span>
+
+                <!-- 右边用区块实现 -->
+                <span class="right">
+                    <span class="r_box1">
+                        <img src="task_image1/叉叉.png" alt="">
+                        <img src="task_image1/更多.png" alt="">
+                    </span>
+                    <span class="r_box2">
+                        <img src="task_image1/头像.png" alt="">
+                    </span>
+                    <span class="r_box3">
+                        <p>Jennifer Turner</p>
+                    </span>
+                    <span class="r_box4">
+                        <p>Cardiologist</p>
+                    </span>
+                    <span class="r_box5">
+                        <p>Next event</p>
+                        <span>
+                            <figure class="circle1" style="background:rgb(100, 160, 228);"></figure>
+                            <p>Add</p>
+                        </span>
+                    </span>
+                    <span class="r_box6">
+                        <img src="task_image1/相机.png" alt="" width="40px" height="40px">
+                        <span>
+                            <p style="font-size: 14px; line-height: 28px; font-weight: 800;">
+                                Medical conference <br>
+                                May 5 - 11:00 AM
+                                <p style="color:rgb(25, 222, 236); font-size: 14px; margin-top: 3px; font-weight: 800;">
+                                USA Housion
+                                </p>
+                            </p>
+                        </span>
+
+                    </span>
+                    <span class="r_box7">
+                        <p>Next notifications</p>
+                    </span>
+                    <span class="r_box8">
+                        <p>
+                            The patient will comes to <br>
+                            you in 5 minutes</p>
+                    </span>
+                </span>
+                
+            </div>
+        </div>
+
+
+        <img src="task_image1/5.png" alt="" class = "right_chacha"> 
+        <!-- 背景 -->
+        <img src="task_image1/背景图_画板 1.png" alt="" class="main_bg">
+    </div>
+
+
 </body>
+
 </html>

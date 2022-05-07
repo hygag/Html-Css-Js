@@ -1,0 +1,570 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+.main{
+    width: 1500px;
+    height: 950px;
+   
+    position: relative;
+    /* 弹性布局 */
+    display: flex;
+    justify-content: center;
+    position: relative;
+   
+}
+.main_bg{
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: auto;
+  
+}
+.main_content{
+    
+    /* border: solid 1px black; */
+    background-color: #fff;
+    height: 88%;
+    width: 88%;
+    margin-top: 5.0%;
+    border-radius: 50px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    /* display: flex;
+    box-sizing: border-box; */
+}
+.main_content_box{
+    width: 95%;
+    height:90%;
+    position: relative;
+    
+    /* border: 1px black solid; */
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    height: 100%;
+    flex: 1;
+    /* border: 1px black solid; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* 这个东东包含了一个img跟五个li标签 */
+.span_li{
+    display: flex;
+    flex-direction: column;
+    margin-top: 13px;
+}
+
+/* 给li设置css属性 */
+.span_li li{
+    /* border: 1px solid black; */
+    width: auto;
+    height: 50px;
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+    /* border-bottom: 1px black solid; */
+}
+
+/* 设置伪类，不过图不太好，感觉还要用到js */
+/* .span_li li:hover {
+    background-color: rgb(89, 202, 232); border-radius: 13px;
+
+} */
+/* .span_li li:active {
+    background-color: rgb(89, 202, 232); border-radius: 13px;
+    
+} */
+
+
+/* 设置li 里面的 img&p 表签属性 */
+li img{
+    box-sizing: border-box;
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+li p{
+    font-size: 16px;
+    /* border: 1px solid black; */
+}
+
+
+
+
+.center{
+    background-color: rgb(246, 247, 251); 
+    flex: 5;
+    height: 100%;
+    /* border: 1px black solid; */
+    margin-right: 35px;
+    margin-left: 13px;
+    padding: 25px 60px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+/* box1 区域 */
+.center_box1{
+    display:  flex;
+    width: 100%;
+    height: 12%;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px black solid; */
+    position: relative;
+    
+}
+.box1_1{
+    border-radius: 15px;
+    background-color: #fff;
+    width: 50%;
+    height: 85%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.box1_1 p{
+    color: rgb(16, 168, 238); font-size: 18px;font-family:Georgia, serif ;
+    padding-left: 25px;
+    opacity: 0.6;
+}
+.box1_1 img{
+    transform: scale(0.3);
+    
+}
+.box1_2{
+    border-radius: 15px;
+    border: rgb(94, 148, 228) 2px solid;
+    width: 28%;
+    height: 88%;
+    color: rgb(15, 105, 240);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box1_2 ul{
+    padding-left: 5px;
+    font-size: 20px;
+}
+
+/* box2 区域 */
+.center_box2{
+    margin-top: 20px;
+    width: 100%;
+    height: 18%;
+    /* border: 1px black solid; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+    /* justify-content: space-between; */
+
+}
+.box2_1{
+    border-radius: 20px;
+    width: 55%;
+    height: 100%;
+    margin-right: 10%;
+    position: relative;
+    
+    background: url("task_image1/药.png") no-repeat ;
+    background-size: cover;
+    padding: 25px 25px 35px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.box2_1 h3{
+    color: #fff;
+    font-size: 20px;
+}
+.box2_1 p{
+    margin-top: 10px;
+    color: #fff;
+    font-size: 14px;
+    padding-right: 45px;
+}
+.box2_2{  
+    border-radius: 20px;
+    width: 16%;
+    height: 100%;
+    margin-right: 6%;
+    background-color: #fff;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.box2_2 h2{
+    /* transform: scaleX(0.8); */
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 23px;
+     /* padding-top: 10px; */
+     margin-left: 15px;
+     margin-top: 8px;
+    /* padding-left: 10px;  */
+}
+.box2_2 p{
+    margin-bottom: 20px;
+    margin-left: 15px;
+    font-size: 15px;
+    opacity: 0.8;
+    /* padding-left: 15px; */
+    
+}
+
+
+/* box3 区域 */
+.center_box3{
+    margin-top: 15px;
+    width: 100%;
+    height: 5%;
+    /* border: 1px black solid; */
+    position: relative;
+}
+.center_box3 p{
+    font-size: 24px;
+    color: #000;
+}
+
+/* box4 区域 */
+.center_box4{
+    margin-top: 14px;
+    width: 100%;
+    height: 10%;
+    /* border: 1px black solid; */
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+}
+.Box4{
+    width: 30%;
+    height: 100%;
+    border-radius: 20px;
+    /* border: 1px black solid; */
+
+    display: flex;
+    align-items: center;
+}
+.Box4 img{
+    margin-left: 15px;
+    width: 50px;
+    height: 50px;
+}
+.Box4 p{
+    
+    opacity: 0.9;
+    margin-left: 15px;
+    color: #fff;
+    
+    line-height: 25px;
+}
+
+/* box4 区域 */
+/* 俩个表 左边跟右边 */
+.center_box5{
+    margin-top: 45px;
+    width: 100%;
+    height: 38%;
+    /* border: 1px black solid; */
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+}
+/* ！！！大数据表，左边的 */
+.box5_1{
+    /* border: #000 1px solid; */
+    background-color: #fff;
+    border-radius: 20px;
+    width: 60%;
+    height: 110%;
+    padding: 18px 24px;
+
+    display: flex;
+    flex-direction: column;
+}
+/* 文字加俩个图 */
+.box5_1_top{
+    width: 100%;
+    height: 10%;
+    /* border: #000 1px solid; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.box5_1_top p{
+    font-weight: bolder;
+    /* font-family: Verdana, Geneva, sans-serif; */
+    font-size: 18px;
+}
+/* 数据表 */
+.box5_1_center{
+    margin-top: 25px;
+
+    display: flex;
+}
+.box5_1_center img{
+    width: 90%;
+    height: auto;
+    
+}
+.box5_1_center span{
+    width: 10%;
+    height: 105%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    bottom: 7px;
+   
+}
+.box5_1_center span li{
+    list-style: none;
+    color: rgba(88, 79, 79, 0.192);
+    font-size: 13px;
+}
+/* 数据表的底层 */
+.box5_1_bottom{
+    margin-top: 16px;
+    /* border: #000 1px solid; */
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 40px;
+}
+.box5_1_bottom li{
+    
+    list-style: none;
+    color: rgba(88, 79, 79, 0.192);
+    font-size: 13px;
+    
+}
+.box5_2{
+    padding: 18px 26px;
+    background-color: #fff;
+    border-radius: 20px;
+    /* border: #000 1px solid; */
+    width: 35%;
+    height: 110%;
+
+    display: flex;
+    flex-direction: column;
+}
+.box5_2_top{
+    width: 100%;
+    height: 10%;
+    /* border: #000 1px solid; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.box5_2_top p{
+    font-weight: bolder;
+    /* font-family: Verdana, Geneva, sans-serif; */
+    font-size: 18px;
+}
+.box5_2_center{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: #000 1px solid; */
+    width: 100%;
+    height: 55%;
+}
+.box5_2_bottom{
+    margin-top: 6px;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.box5_2_bottom span{
+   display: flex
+}
+.box5_2_bottom p{
+    font-size: 13px;
+    font-weight: 600;
+ }
+ .circle{
+    z-index: 5;
+    position: relative;
+    border-radius: 50%;
+    height: 13px;
+    width: 13px;
+    /* background-color: red; */
+    margin-right: 23px;
+   
+    /* background-color: rgb(252, 237, 230); */
+   
+}
+
+/* 右边分八个区块 */
+.right{
+    z-index: 1;
+    position: relative;
+    /* border: 1px black solid; */
+    height: 100%;
+    flex: 1.5;
+}
+/* 一 */
+.r_box1{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+.r_box1 img{
+    width:30px; height:30px;
+}
+/* 二 */
+.r_box2{
+    margin-top: 15px;
+    /* border:  1px black solid; */
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.r_box2 img{
+    transform: scale(0.9);
+    height: 87%;
+    width: auto;
+}
+/* 三 */
+.r_box3{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.r_box3 p{
+    font-size: 23px;
+    font-weight: bolder;
+}
+/* 四 */
+.r_box4{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.r_box4 p{
+    font-size: 18px;
+    
+    color: rgb(158, 134, 134);
+}
+/* 五 */
+.r_box5{
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.r_box5 p{
+    font-size: 18px;
+    font-weight: bolder;
+}
+.r_box5 span{
+    display: flex;
+    /* border: 1px black solid; */
+    justify-content: space-between;
+    align-items: center;    
+    width: 50px;
+}
+.r_box5 span p{
+    color: rgb(100, 160, 228);
+    font-size: 16px;
+    font-weight: bolder;
+}
+.r_box5 span .circle1{
+    z-index: 5;
+    position: relative;
+    border-radius: 50%;
+    height: 6px;
+    width: 6px;
+    
+    
+   
+    /* background-color: rgb(252, 237, 230); */
+    background-color: rgb(100, 160, 228);
+}
+/* 六 */
+.r_box6{
+    /* border: #000 solid 1px; */
+    background-color: #fff;
+    border-radius: 15px;
+    width: 100%;
+    height: 13%;
+    margin-top: 55px;
+    box-shadow: 0 0 15px rgb(155, 145, 145) ;
+    padding: 12px 15px;
+
+    display: flex;
+    align-items: center;
+}
+.r_box6 span{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+/* 七 */
+.r_box7{
+    display: flex;
+    margin-top: 48px;
+}
+.r_box7 p{
+    font-size: 18px;
+    font-weight: bolder;
+}
+/* 八 */
+.r_box8{
+    display: flex;
+    position: relative;
+    background-color: rgb(125, 217, 231);
+    padding: 15px 26px;
+    border-radius: 15px;
+    width: 100%;
+    height: 9%;
+    margin-top: 23px;
+}
+.r_box8 p{
+    color: #fff;
+    line-height: 20px;
+}
+.right_chacha{
+    z-index: 5;
+    position: relative;
+    top: 770px;
+    left: -75px;
+    height: 30px;
+    width: 30px;
+}
