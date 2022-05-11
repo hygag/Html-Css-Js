@@ -16,7 +16,7 @@ btn.onclick = function(){
         while(val == 0 || (val >= 'a' && val <= 'z') || (val >= 'A' && val <= 'Z') ) 
         val = prompt("由于输入的值不合法请重新输入第" + (i + 1) + "个数");
 
-        div.style.width = "40px";
+        div.style.width = "20px";
         div.style.height = val * 20 + "px";
         
         div.style.backgroundColor = "cadetblue";
@@ -29,7 +29,7 @@ btn.onclick = function(){
         div.style.left = i * 50 + "px" ;
         div.style.fontSize = "auto";
         //div.style.position = "absolute";
-        div.style.transition = "all 1s";
+        div.style.transition = "all 0.2s";
         div.style.marginLeft = "10px";
         
         
