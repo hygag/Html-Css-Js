@@ -29,8 +29,9 @@ btn.onclick = function(){
         div.style.left = i * 50 + "px" ;
         div.style.fontSize = "auto";
         //div.style.position = "absolute";
-        div.style.transition = "all 0.2s";
-        div.style.marginLeft = "10px";
+        div.style.transition = "background-color 0.2s";
+        div.style.marginLeft = "5px";
+        div.style.marginRight = "5px";
         
         
         

@@ -45,7 +45,7 @@ function msort(){
             clearInterval(timer)
           //console.log('排序完毕')
         }
-      },300)
+      },1000)
 
       
     }
@@ -105,7 +105,7 @@ function csort(){
       
         
       }
-    }, 300);
+    }, 1000);
 
 }
 
